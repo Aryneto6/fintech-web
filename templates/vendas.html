@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro - iFood</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3 bg-danger text-white p-4 d-flex flex-column menu_lateral">
+                <!-- Logo iFood -->
+                <img src="/assets/ifood-logo.svg" alt="iFood Logo" class="img-fluid mx-auto"
+                    style="width: 230px; margin-top: 2rem;">
+
+                <nav class="nav flex-column pt-5">
+                    <!-- Itens do Menu -->
+                    <a class="nav-link text-white d-flex justify-content-between align-items-center border-bottom py-3 fs-5"
+                        href="#">
+                        <span>
+                            <img src="/assets/icone-dashboard.svg" alt="Dashboard Icon" class="me-2"
+                                style="width: 30px;"> Dashboard Financeiro
+                            <small class="d-block text-muted fs-6">Saldo, receitas e despesas</small>
+                        </span>
+                        <span>&gt;</span>
+                    </a>
+                    <a class="nav-link text-white d-flex justify-content-between align-items-center border-bottom py-3 fs-5"
+                        href="#">
+                        <span>
+                            <img src="/assets/icone-consulta de saldo.svg" alt="Saldo Icon" class="me-2"
+                                style="width: 15px;"> Consulta de Saldo e Transações
+                            <small class="d-block text-muted fs-6">Saldo e Transações</small>
+                        </span>
+                        <span>&gt;</span>
+                    </a>
+                    <a class="nav-link text-white d-flex justify-content-between align-items-center border-bottom py-3 fs-5"
+                        href="#">
+                        <span>
+                            <img src="/assets/gestao3.svg" alt="Pagamentos Icon" class="me-2" style="width: 30px;">
+                            Gestão de Pagamentos e Recebíveis
+                            <small class="d-block text-muted fs-6">Minhas Gestões</small>
+                        </span>
+                        <span>&gt;</span>
+                    </a>
+                    <a class="nav-link text-white d-flex justify-content-between align-items-center border-bottom py-3 fs-5"
+                        href="#">
+                        <span>
+                            <img src="/assets/icone-relatorio.svg" alt="Relatórios Icon" class="me-2"
+                                style="width: 30px;"> Relatórios e Análises Financeiras
+                            <small class="d-block text-muted fs-6">Meus Relatórios</small>
+                        </span>
+                        <span>&gt;</span>
+                    </a>
+                </nav>
+
+                <footer class="mt-auto text-center">
+                    <!-- Ícone do Usuário e Email -->
+                    <img src="/assets/imagem-usuario.svg" alt="User Icon" class="mb-3" style="width: 70px;">
+                    <p class="mb-3 fs-6">aryjoseminotto@gmail.com</p>
+                </footer>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-9 p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="h3 text-danger border-red">Dashboard Financeiro</h1>
+                    <div>
+                        <p class="text-muted mb-0">Período de Vendas: <span class="date-highlight"
+                                data-date="15/06/2024 - 25/06/2024"><strong>15/06/2024 - 25/06/2024</strong></span></p>
+                    </div>
+                    <div class="cabecalho">
+                        <nav class="cabecalho__menu">
+                            <a class="cabecalho__menu__link" href="index.html">Meu Repasse</a>
+                            <a class="cabecalho__menu__link" href="templates/pedidos.html">Pedidos</a>
+                            <a class="cabecalho__menu__link" href="templates/vendas.html">Vendas</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <section class="mt-4">
+                    <a class="text-danger text-decoration-none fs-5 mb-3 d-block" href="#">
+                        < Voltar</a> <!-- Margem inferior no link e exibido como bloco para aplicar a margem -->
+                            <h2 class="h5 mb-3">Olá, Ary</h2> <!-- Margem inferior no h2 -->
+                            <h3 class="h4 ">Detalhamento dos pedidos</h3> <!-- Margem inferior no h3 -->
+                            <p class="text-muted">Aqui você encontra detalhes referentes a saldos, receitas, despesas e
+                                relatórios analíticos.</p> <!-- Margem inferior no parágrafo -->
+                            <div class="row text-center mt-3">
+                                <div class="col-md-4">
+                                    <div class="card p-3">
+                                        <strong class="display-6">158</strong>
+                                        <span class="text-success">+24,88%</span>
+                                        <p>Total de vendas realizadas</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card p-3">
+                                        <strong class="display-6">R$ 1.540,51</strong>
+                                        <span class="text-success">+11,77%</span>
+                                        <p>Valor total das vendas</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card p-3">
+                                        <strong class="display-6">76</strong>
+                                        <span class="text-success">+11,77%</span>
+                                        <p>Novos clientes</p>
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+
+                <figure class="mt-5">
+                    <figcaption>Total de vendas realizadas nos últimos 7 dias</figcaption>
+                    <img src="chart-placeholder.png" alt="Gráfico de vendas" class="img-fluid mt-3">
+                </figure>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Financeiro - iFood</title>
+    <title>Dashboard Financeiro - Pedidos</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/static/styles.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
@@ -12,9 +12,9 @@
 
 <body>
 
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <!-- Menu Lateral -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
             <aside class="col-md-3 bg-danger text-white p-4 d-flex flex-column menu_lateral">
                 <!-- Logo iFood -->
                 <img src="/assets/ifood-logo.svg" alt="iFood Logo" class="img-fluid mx-auto"
@@ -89,70 +89,80 @@
                         <a class="text-danger text-decoration-none fs-5 mb-3 d-block" href="#">
                             < Voltar</a> <!-- Margem inferior no link e exibido como bloco para aplicar a margem -->
                                 <h2 class="h5 mb-3">Olá, Ary</h2> <!-- Margem inferior no h2 -->
-                                <h3 class="h4 ">Detalhamento do Repasse</h3> <!-- Margem inferior no h3 -->
+                                <h3 class="h4 ">Detalhamento dos pedidos</h3> <!-- Margem inferior no h3 -->
                                 <p class="text-muted">Aqui você encontra detalhes referentes a saldos, receitas,
                                     despesas e relatórios analíticos.</p> <!-- Margem inferior no parágrafo -->
                     </section>
 
-                    <!-- Payment Details -->
-                    <section class="row mt-5">
-                        <!-- Valor a receber -->
-                        <article class="col-lg-6 mb-5 bg-light rounded shadow-sm"
-                            style="border: 1px solid rgb(190, 190, 190); padding: 40px; max-width: 500px; margin-right: 100px; margin-left: 80px; margin-top: 18px;">
-                            <h3 class="h5">Valor a receber</h3>
-                            <p class="display-6">R$ 1.540,51</p>
-                            <p><strong>Status:</strong> Pago em 25/06/2024</p>
-                            <a class="text-primary" href="#">Detalhar pagamento ></a>
-                            <p class="text-danger mt-3">
-                                Seu repasse possui efeitos de contrato de registro de recebíveis.
-                            </p>
-                        </article>
-                        <!-- Detalhes das Vendas -->
-                        <div class="col-lg-6 mt-3">
-                            <div class="card p-5 shadow-sm" style="border: 1px solid rgb(190, 190, 190);">
-                                <ul class="list-unstyled">
-                                    <li class="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Total de Vendas no período</strong><br>
-                                            <small>Foram 107 vendas concluídas</small>
-                                        </div>
-                                        <div>R$ 2.478,88</div>
-                                    </li>
-                                    <hr>
-                                    <li class="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Comissão Ifood</strong><br>
-                                            <small>Cobrada da loja sobre o valor das vendas</small>
-                                        </div>
-                                        <div class="text-danger">-R$ 470,88</div>
-                                    </li>
-                                    <hr>
-                                    <li class="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Taxa de transação</strong><br>
-                                            <small>Cobrada de todos os serviços financeiros</small>
-                                        </div>
-                                        <div class="text-danger">-R$ 395,00</div>
-                                    </li>
-                                    <hr>
-                                    <li class="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Comissão para retirar</strong><br>
-                                            <small>Cobrada da loja sobre o valor das vendas</small>
-                                        </div>
-                                        <div class="text-danger">-R$ 72,49</div>
-                                    </li>
-                                    <hr>
-                                    <li class="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Total</strong>
-                                        </div>
-                                        <div><strong>R$ 1.540,51</strong></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!-- Table Section -->
+                    <section>
+                        <table class="table table-bordered text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Pedido</th>
+                                    <th>Canal</th>
+                                    <th>Valor do Pedido</th>
+                                    <th>Frete pago pelo cliente</th>
+                                    <th>Taxa de Serviço</th>
+                                    <th>Comissão iFood</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/06 - 3456 <br><span class="badge bg-success">Concluído</span> <br><span>via
+                                            iFood</span></td>
+                                    <td><img src="../assets/ifood-logo pequena.svg" alt="iFood Logo" class="img-fluid"
+                                            style="width: 50px;"></td>
+                                    <td>R$ 78,50</td>
+                                    <td>-R$ 05,05</td>
+                                    <td>------</td>
+                                    <td>-R$ 5,70</td>
+                                </tr>
+                                <tr>
+                                    <td>24/06 - 5598 <br><span class="badge bg-success">Concluído</span> <br><span>via
+                                            iFood</span></td>
+                                    <td><img src="../assets/ifood-logo pequena.svg" alt="iFood Logo" class="img-fluid"
+                                            style="width: 50px;"></td>
+                                    <td>R$ 55,77</td>
+                                    <td>-R$ 00,75</td>
+                                    <td>------</td>
+                                    <td>-R$ 7,90</td>
+                                </tr>
+                                <tr>
+                                    <td>23/06 - 3321 <br><span class="badge bg-success">Concluído</span> <br><span>via
+                                            iFood</span></td>
+                                    <td><img src="../assets/ifood-logo pequena.svg" alt="iFood Logo" class="img-fluid"
+                                            style="width: 50px;"></td>
+                                    <td>R$ 69,33</td>
+                                    <td>-R$ 10,90</td>
+                                    <td>-R$ 01,55</td>
+                                    <td>-R$ 9,40</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
+
+                    <!-- Pagination Section -->
+                    <section class="d-flex justify-content-center mt-4">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">&lt;</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><span class="page-link">...</span></li>
+                                <li class="page-item"><a class="page-link" href="#">100</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">&gt;</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+
                 </main>
             </div>
         </div>
