@@ -37,35 +37,24 @@ footer p {
 }
 
 .cabecalho__menu__link {
-    color: #6c757d;
-    /* Cor cinza */
-    background-color: transparent;
-    /* Fundo transparente */
-    border: none;
-    /* Sem borda */
-    padding: 1rem 2rem;
-    /* Espaçamento interno */
-    text-decoration: none;
-    /* Remove sublinhado */
-    display: inline-block;
-    /* Alinha o link como botão */
+    color: #6c757d; /* Cor cinza */
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Alinha o link como botão */
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .cabecalho__menu__link:hover {
     color: #fff;
-    background-color: #f10505;
-    /* Cinza escuro para o hover */
+    background-color: #f10505; /* Cor vermelha no hover */
 }
 
-/* Estilo para indicar o estado ativo */
-.cabecalho__menu__link:focus,
-.cabecalho__menu__link:active {
-    color: #fff;
-    background-color: #dc3545;
-    /* Cor vermelha quando ativo */
-    border-color: #dc3545;
-    outline: none;
-    /* Remove o contorno padrão de foco */
+/* Estilo para o botão ativo */
+.cabecalho__menu__link.active {
+    color: #dc3545; /* Cor vermelha para o texto */
+    border-bottom: 2px solid #dc3545; /* Linha vermelha abaixo */
 }
 
 .date-highlight {
